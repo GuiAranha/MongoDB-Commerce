@@ -1,4 +1,4 @@
-// adiciona combo e tasty em tags, ordena em ordem alfabetica
+// ordena valoresNutricionais pelo percentual
 db.produtos.updateMany({}
 ,{ $push: { valoresNutricionais: { $each: [], $sort: { percentual: -1 }} }});
 db.produtos.find({}
