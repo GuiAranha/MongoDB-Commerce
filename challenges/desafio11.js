@@ -1,4 +1,4 @@
-// retorna produtos que nao sejam big mac ou mcChicken
+// retorna lanches que nao sejam big mac ou mcChicken
 db.produtos.find({ $and: [
   {nome: { $not: { $eq: "Big Mac" } } },
   {nome: { $not: { $eq: "McChicken" } } },
