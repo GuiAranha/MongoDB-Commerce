@@ -1,4 +1,4 @@
-
+// adiciona avaliacao em todos itens, seta todos bovinos com avaliacao 5 e ave com avaliacao 3, retorna todos
 db.produtos.updateMany({},{ $set: { avaliacao: 0 } });
 db.produtos.updateMany({ tags: { $elemMatch: { $eq: "bovino" }}}
   ,{ $inc: { avaliacao: 5 } });
